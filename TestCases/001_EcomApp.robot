@@ -15,14 +15,6 @@ Test Case 1: Register User
     Application.Create new user account
     common.Logout from the application
 
-#Test Case 2: Login User with correct email and password
-#    [Tags]      Critical
-#    Application.Launch Browser and open application
-#    Application.Verify that home page is visible successfully
-#    Application.Login using correct email and password
-#    common.Verify user successfully login      ${user_name}
-#    common.Logout from the application
-
 #Data Driven using CSV
 Test Case 2: Multiple Login User with correct emails and passwords
     [Tags]      Critical
@@ -30,13 +22,6 @@ Test Case 2: Multiple Login User with correct emails and passwords
     Application.Verify that home page is visible successfully
     LoginSignUpPage.Successfully switch to login Signup page
     Application.Multiple Logins using correct emails and passwords using CSV    ${csvFile}
-
-#Test Case 3: Login User with incorrect email and password
-#    [Tags]       Critical
-#    Application.Launch Browser and open application
-#    Application.Verify that home page is visible successfully
-#    Application.Login using incorrect email and password
-#    LoginSignUpPage.Verify error when user tries to login with wrong credential
 
 #Data Driven using RF Built In
 Test Case 3: Login User with multiple incorrect emails and passwords combination
