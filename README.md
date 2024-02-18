@@ -45,7 +45,7 @@ After installing *pycharm* and *python*, open terminal and install mentioned lib
 ## 🚀 Running Tests
 
   ```bash
-  robot -d Result '.\Test Cases\001_EcomApp.robot'
+  robot -d Result '.\TestCases\001_EcomApp.robot'
   ```
 
 ## 📁 Project Structure
