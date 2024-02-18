@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../Resources/Application.robot
 Resource    ../Test Data/InputData.robot
-Test Teardown     Close Browser
+Test Teardown     Close all browsers
 
 *** Variables ***
 ${fileToUpload}     fileToUpload.txt
