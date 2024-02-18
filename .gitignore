@@ -1,0 +1,15 @@
+
+log.html
+output.xml
+report.html
+/shelf/
+/workspace.xml
+output/
+venv/
+temp/
+.rpa/
+.idea/
+misc.xml
+modules.xml
+selenium-screenshot-*.png
+profiles_settings.xml
