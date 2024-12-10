@@ -1,0 +1,10 @@
+pyotp
+requests
+robotframework
+robotframework-datadriver
+robotframework-requests
+robotframework-jsonlibrary
+robotframework-seleniumlibrary
+robotframework-sshlibrary
+robotframework-mqttlibrary
+zipp
