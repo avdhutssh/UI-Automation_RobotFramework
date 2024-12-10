@@ -72,3 +72,13 @@ Generate password firstname lastname
     ${f_name}       Generate Random name
     ${l_name}       Generate Random name
     [Return]    ${password}     ${f_name}    ${l_name}
+
+Check User Type Based on Open URL
+    ${current_url}=    Get Location
+    Log    Current URL: ${current_url}
+    ${user_type}=    Run Keyword If    'admin.html' in ${current_url}    Set Variable    Admin
+    ...    ELSE IF    'seller.html' in ${current_url}    Set Variable    Seller
+    ...    ELSE IF    'customer.html' in ${current_url}    Set Variable    Customer
+    ...    ELSE    Set Variable    Unknown
+    Log    User Type: ${user_type}
+    [Return]    ${user_type}
