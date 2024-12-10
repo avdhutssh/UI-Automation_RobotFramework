@@ -90,3 +90,9 @@ Multiple Logins using correct emails and passwords using CSV
 #            Log   Password is : ${abc[1]}
 #            Log   User is : ${abc[2]}
 #    END
+
+From any page get Application Cookies
+    ${AppCookies}=    Get cookies
+    ${AppCookies}=       Replace String    ${AppCookies}    \n    ${SPACE}
+    Set Suite Variable    ${AppCookies}     ${AppCookies}
+    Log    ${AppCookies}
